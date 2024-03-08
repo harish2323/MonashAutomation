@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.9.6 on darwin)" generated="2024-03-07T12:18:39.993958" rpa="false" schemaversion="5">
+<suite id="s1" name="LoginTest" source="/Users/harishravichandran/PycharmProjects/Monash/Tests/LoginTest.robot">
+<test id="s1-t1" name="login scenario" line="9">
+<kw name="Login Scenario">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:18:40.449721" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:18:40.449256" elapsed="35.179530"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:15.631993" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:15.630706" elapsed="0.966156"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:16.597692" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-07T12:19:16.646383" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:16.597238" elapsed="0.108637"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:16.706702" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:16.706305" elapsed="0.117584"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:16.845030" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<arg>${HOME_PAGE_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:16.836896" elapsed="0.008303"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:16.882962" level="INFO">Element 'xpath://span[text()="Products"]' is displayed.</msg>
+<arg>xpath://span[text()="Products"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-07T12:19:16.845561" elapsed="0.037596"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-07T12:19:16.883864" elapsed="0.167535"/>
+</kw>
+<arg>username=standard_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2024-03-07T12:18:40.447793" elapsed="36.603877"/>
+</kw>
+<status status="PASS" start="2024-03-07T12:18:40.445805" elapsed="36.606469"/>
+</test>
+<test id="s1-t2" name="login scenario" line="9">
+<kw name="Login Scenario">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:17.056949" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:17.056384" elapsed="7.854554"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:24.912350" level="INFO">Typing text 'locked_out_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:24.911727" elapsed="0.255122"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:25.167724" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-07T12:19:25.208953" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:25.167147" elapsed="0.095825"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:25.264076" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:25.263507" elapsed="0.064109"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:25.581366" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-07T12:19:25.581603" level="FAIL">Location should have been 'https://www.saucedemo.com/inventory.html' but was 'https://www.saucedemo.com/'.</msg>
+<arg>${HOME_PAGE_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="FAIL" start="2024-03-07T12:19:25.328030" elapsed="0.264760">Location should have been 'https://www.saucedemo.com/inventory.html' but was 'https://www.saucedemo.com/'.</status>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<arg>xpath://span[text()="Products"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-03-07T12:19:25.593147" elapsed="0.000062"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-07T12:19:25.593399" elapsed="0.000049"/>
+</kw>
+<arg>username=locked_out_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="FAIL" start="2024-03-07T12:19:17.055633" elapsed="8.538073">Location should have been 'https://www.saucedemo.com/inventory.html' but was 'https://www.saucedemo.com/'.</status>
+</kw>
+<status status="FAIL" start="2024-03-07T12:19:17.053234" elapsed="8.541037">Location should have been 'https://www.saucedemo.com/inventory.html' but was 'https://www.saucedemo.com/'.</status>
+</test>
+<test id="s1-t3" name="login scenario" line="9">
+<kw name="Login Scenario">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:25.597541" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:25.597016" elapsed="1.944178"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:27.545880" level="INFO">Typing text 'problem_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:27.541983" elapsed="0.289355"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:27.832137" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-07T12:19:28.003592" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:27.831704" elapsed="0.300707"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:28.133227" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:28.132811" elapsed="0.112462"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:28.250517" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<arg>${HOME_PAGE_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:28.245537" elapsed="0.005127"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:28.275155" level="INFO">Element 'xpath://span[text()="Products"]' is displayed.</msg>
+<arg>xpath://span[text()="Products"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-07T12:19:28.251069" elapsed="0.024247"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-07T12:19:28.275619" elapsed="0.121279"/>
+</kw>
+<arg>username=problem_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2024-03-07T12:19:25.596509" elapsed="2.801047"/>
+</kw>
+<status status="PASS" start="2024-03-07T12:19:25.594925" elapsed="2.803099"/>
+</test>
+<test id="s1-t4" name="login scenario" line="9">
+<kw name="Login Scenario">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:28.402371" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:28.401936" elapsed="2.480943"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:30.885089" level="INFO">Typing text 'performance_glitch_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:30.884449" elapsed="0.252530"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:31.137965" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-07T12:19:31.179273" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:31.137447" elapsed="0.104372"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:31.242659" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:31.242301" elapsed="5.107048"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:36.372515" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<arg>${HOME_PAGE_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:36.349820" elapsed="0.022847"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:36.397600" level="INFO">Element 'xpath://span[text()="Products"]' is displayed.</msg>
+<arg>xpath://span[text()="Products"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-07T12:19:36.372942" elapsed="0.024788"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-07T12:19:36.397962" elapsed="0.100497"/>
+</kw>
+<arg>username=performance_glitch_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2024-03-07T12:19:28.401226" elapsed="8.097525"/>
+</kw>
+<status status="PASS" start="2024-03-07T12:19:28.398935" elapsed="8.100186"/>
+</test>
+<test id="s1-t5" name="login scenario" line="9">
+<kw name="Login Scenario">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:36.501707" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:36.501434" elapsed="1.718130"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:38.220807" level="INFO">Typing text 'error_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:38.220221" elapsed="0.229718"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:38.450930" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-07T12:19:38.481319" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:38.450404" elapsed="0.097719"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:38.548903" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:38.548546" elapsed="0.092231"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:38.649205" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<arg>${HOME_PAGE_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:38.641218" elapsed="0.008133"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:38.674031" level="INFO">Element 'xpath://span[text()="Products"]' is displayed.</msg>
+<arg>xpath://span[text()="Products"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-07T12:19:38.649784" elapsed="0.024369"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-07T12:19:38.674396" elapsed="0.141773"/>
+</kw>
+<arg>username=error_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2024-03-07T12:19:36.500985" elapsed="2.315450"/>
+</kw>
+<status status="PASS" start="2024-03-07T12:19:36.499579" elapsed="2.317247"/>
+</test>
+<test id="s1-t6" name="login scenario" line="9">
+<kw name="Login Scenario">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:38.819567" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:38.819283" elapsed="1.215898"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:40.037193" level="INFO">Typing text 'visual_user' into text field 'id:user-name'.</msg>
+<arg>id:user-name</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:40.036384" elapsed="0.826715"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:40.863711" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-03-07T12:19:40.906017" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id:password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:40.863402" elapsed="0.530404"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:41.394481" level="INFO">Clicking button 'id:login-button'.</msg>
+<arg>id:login-button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-07T12:19:41.394144" elapsed="0.271835"/>
+</kw>
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:41.675233" level="INFO">Current location is 'https://www.saucedemo.com/inventory.html'.</msg>
+<arg>${HOME_PAGE_URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2024-03-07T12:19:41.666284" elapsed="0.009121"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-03-07T12:19:41.702146" level="INFO">Element 'xpath://span[text()="Products"]' is displayed.</msg>
+<arg>xpath://span[text()="Products"]</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-03-07T12:19:41.676212" elapsed="0.026092"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-03-07T12:19:41.702544" elapsed="0.092948"/>
+</kw>
+<arg>username=visual_user</arg>
+<arg>password=secret_sauce</arg>
+<status status="PASS" start="2024-03-07T12:19:38.818836" elapsed="2.976985"/>
+</kw>
+<status status="PASS" start="2024-03-07T12:19:38.817404" elapsed="2.978928"/>
+</test>
+<status status="FAIL" start="2024-03-07T12:18:39.995550" elapsed="61.801607"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="5" fail="1" skip="0" id="s1" name="LoginTest">LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-03-07T12:19:17.053039" level="WARN">Multiple tests with name 'login scenario' executed in suite 'LoginTest'.</msg>
+<msg time="2024-03-07T12:19:25.594754" level="WARN">Multiple tests with name 'login scenario' executed in suite 'LoginTest'.</msg>
+<msg time="2024-03-07T12:19:28.398690" level="WARN">Multiple tests with name 'login scenario' executed in suite 'LoginTest'.</msg>
+<msg time="2024-03-07T12:19:36.499466" level="WARN">Multiple tests with name 'login scenario' executed in suite 'LoginTest'.</msg>
+<msg time="2024-03-07T12:19:38.817271" level="WARN">Multiple tests with name 'login scenario' executed in suite 'LoginTest'.</msg>
+</errors>
+</robot>
